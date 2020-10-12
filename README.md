@@ -30,7 +30,7 @@ data := map[string] string {
     "time":  "2:45",
 }
 
-res, err := SentSingleClient(app, singleReceiver, data)
+res, err := gfcm.SentSingleClient(app, singleReceiver, data)
 if err != nil {
     fmt.Println("Error sent single client: ", err)
 }
@@ -49,7 +49,7 @@ data := map[string] string {
     "time":  "2:45",
 }
 
-bRes, err := SentMultiClient(app, multiReceiver, data)
+bRes, err := gfcm.SentMultiClient(app, multiReceiver, data)
 if err != nil {
     fmt.Println("Error sent multi client: ", err)
 }
@@ -66,7 +66,7 @@ data := map[string] string {
 }
 
 
-res, err = SentToTopic(app, topic, data)
+res, err = gfcm.SentToTopic(app, topic, data)
 if err != nil {
     fmt.Println("Error sent to topic: ", err)
 }
