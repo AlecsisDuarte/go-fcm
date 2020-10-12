@@ -1,9 +1,21 @@
 ### Example
 
 - installation
+``` go get github.com/michaelwp/go-fcm  ```
+
+- Set service account key, To create the file you need to go to this link :
+https://console.firebase.google.com/project/**YOUR_PROJECT**/settings/serviceaccounts/adminsdk
+
+- import
+```go
+import (
+	gfcm "github.com/michaelwp/go-fcm"
+)
+```
+
 - Set Firebase Admin
 ```go
-app, err := SetFirebaseAdmin("serviceAccountKey.json")
+app, err := gfcm.SetFirebaseAdmin("serviceAccountKey.json")
 if err != nil {
     log.Fatalf("Error: %v", err)
 }
