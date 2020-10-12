@@ -23,7 +23,7 @@ if err != nil {
 
 - Single Receiver
 ```go
-singleReceiver := "eOznMhsdSxmp74ZMNLe0V2:APA91bGQE-VjFMkKSFZ5E9sdRaecJr2wDn-rRDYsH6u52ewkI6-FrHgIfbghoe7zRjoPYeM5kQOg-hJCWZEfXtZaHjzYlMnJVzxi_-CVcEoCiz7cr7SXQFgoNKi7uxZCHnFthh0JAwpP"
+singleReceiver := "eOznMhsdSxmp74ZMNLe0V2:APA91bGQE-VjFMkKSFZ5E9sdRaecJr2wDn-rRDYsH6u52ewkI6-FrHgIfbghoe7zR"
 
 data := map[string] string {
     "score": "850",
@@ -40,8 +40,8 @@ fmt.Println("Successfully sent single client: ", res)
 - Multi Receivers
 ```go
 multiReceiver := []string{
-        "fuv9sAo_uJ4:APA91bEAgx7yL0cRNSsiSQlPnKtgJvAtWAQlnu6yT4jnxrLR4YmXAnev5bDPVRRRcIoWp58F6wCi07oS_-g8Pza82dYbxrLmCMTgGv7LsScmsviVuwxgtiMvUm6rKppPY11_lM7lqQBD",
-        "eOznMhsdSxmp74ZMNLe0V2:APA91bGQE-VjFMkKSFZ5E9sdRaecJr2wDn-rRDYsH6u52ewkI6-FrHgIfbghoe7zRjoPYeM5kQOg-hJCWZEfXtZaHjzYlMnJVzxi_-CVcEoCiz7cr7SXQFgoNKi7uxZCHnFthh0JAwpP",
+        "fuv9sAo_uJ4:APA91bEAgx7yL0cRNSsiSQlPnKtgJvAtWAQlnu6yT4jnxrLR4YmXAnev5bDPVRRRcIoWp58F6wCi07oS_-g8Pza82dYbx",
+        "eOznMhsdSxmp74ZMNLe0V2:APA91bGQE-VjFMkKSFZ5E9sdRaecJr2wDn-rRDYsH6u52ewkI6-FrHgIfbghoe7zRjoPYeM5kQOg-hJCWZP",
     }
 
 data := map[string] string {
